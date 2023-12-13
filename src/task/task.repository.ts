@@ -1,10 +1,14 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
-import { db } from 'src/main';
 import { CreateTaskDto } from './dto/create-tast.dto';
+import { JsonDB, Config } from 'node-json-db';
 @Injectable()
 export class TaskRepository {
+  db: JsonDB;
+  constructor() {
+    this.db = new JsonDB(new Config('./database/myDataBase', true, true, '/'));
+  }
   async findAll() {
-    return (await db.getData('/task')) as CreateTaskDto[];
+    return (await this.db.getData('/task')) as CreateTaskDto[];
   }
 
   async findOne(id: string) {
@@ -15,18 +19,18 @@ export class TaskRepository {
   }
 
   async create(task: CreateTaskDto) {
-    const categoryIndex = await db.getIndex('/category', task.categoryId);
+    const categoryIndex = await this.db.getIndex('/category', task.categoryId);
     if (categoryIndex < 0)
       throw new NotFoundException('categoryId is not found');
 
-    await db.push('/task[]', task);
+    await this.db.push('/task[]', task);
     return task;
   }
 
   async delete(id: string) {
-    const taskIndex = await db.getIndex('/task', id);
+    const taskIndex = await this.db.getIndex('/task', id);
     if (taskIndex < 0) throw new NotFoundException('taskId is not found');
-    await db.delete(`/task[${taskIndex}]`);
+    await this.db.delete(`/task[${taskIndex}]`);
     return `Task with ID '${id}' is deleted`;
   }
 }

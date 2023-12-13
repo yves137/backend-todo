@@ -1,11 +1,6 @@
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
-import { JsonDB, Config } from 'node-json-db';
 import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
-
-export const db = new JsonDB(
-  new Config('./database/myDataBase', true, true, '/'),
-);
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
