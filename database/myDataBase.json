@@ -31,6 +31,55 @@
             "status": "OPEN",
             "description": "Train a deep learning model for image recognition.",
             "categoryId": "d417e16b-d5c3-4462-ae0b-03be0997df4c"
+        },
+        {
+            "id": "f22ecbba-f4bd-43f7-b4e6-ce72cc74ca2b",
+            "title": "test Task",
+            "description": "task description",
+            "categoryId": "b099b19c-d81e-4972-bb2e-40d6a7d67a9f",
+            "status": "OPEN"
+        },
+        {
+            "id": "e134f15f-116b-4d8b-a971-55ca3a8a7ee8",
+            "title": "test Task",
+            "description": "task description",
+            "categoryId": "b099b19c-d81e-4972-bb2e-40d6a7d67a9f",
+            "status": "OPEN"
+        },
+        {
+            "id": "7b04272d-c67e-447c-83c1-29bf11d91e2c",
+            "title": "test Task",
+            "description": "task description",
+            "categoryId": "b099b19c-d81e-4972-bb2e-40d6a7d67a9f",
+            "status": "OPEN"
+        },
+        {
+            "id": "cd46c593-19e0-4b4b-a7dd-d081f4aa15b9",
+            "title": "test Task",
+            "description": "task description",
+            "categoryId": "b099b19c-d81e-4972-bb2e-40d6a7d67a9f",
+            "status": "OPEN"
+        },
+        {
+            "id": "2dbe1a9d-cda5-498f-b9aa-23ddc6938c76",
+            "title": "test Task",
+            "description": "task description",
+            "categoryId": "b099b19c-d81e-4972-bb2e-40d6a7d67a9f",
+            "status": "OPEN"
+        },
+        {
+            "id": "5c7809d3-1fb6-4787-b5b2-cb0aa3d29bcf",
+            "title": "test Task",
+            "description": "task description",
+            "categoryId": "b099b19c-d81e-4972-bb2e-40d6a7d67a9f",
+            "status": "OPEN"
+        },
+        {
+            "id": "4ef27b49-ec23-42ba-b046-4da4bd0847a8",
+            "title": "test Task",
+            "description": "task description",
+            "categoryId": "b099b19c-d81e-4972-bb2e-40d6a7d67a9f",
+            "status": "OPEN"
         }
     ]
 }
