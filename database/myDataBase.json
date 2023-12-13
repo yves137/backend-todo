@@ -1,0 +1,36 @@
+{
+    "category": [
+        {
+            "id": "b099b19c-d81e-4972-bb2e-40d6a7d67a9f",
+            "name": "Software Development"
+        },
+        {
+            "id": "f2736225-8204-4a5f-b134-0866bb5fd72f",
+            "name": "Mobile App Development"
+        },
+        {
+            "id": "e6daebf6-e6d8-4ed7-af84-28fa923b5cee",
+            "name": "Web Development"
+        },
+        {
+            "id": "d417e16b-d5c3-4462-ae0b-03be0997df4c",
+            "name": "Artificial Intelligence (AI)"
+        }
+    ],
+    "task": [
+        {
+            "id": "61012a6c-acf5-4956-b8b4-3cc7b2a384b2",
+            "title": "Create End Point",
+            "description": "create end point for mobile service only",
+            "categoryId": "f2736225-8204-4a5f-b134-0866bb5fd72f",
+            "status": "OPEN"
+        },
+        {
+            "id": "bc3f3996-81f6-468e-b553-dd4de181d927",
+            "title": "AI TASK",
+            "status": "OPEN",
+            "description": "Train a deep learning model for image recognition.",
+            "categoryId": "d417e16b-d5c3-4462-ae0b-03be0997df4c"
+        }
+    ]
+}
